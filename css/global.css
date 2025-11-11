@@ -43,3 +43,7 @@ time, mark, audio, video {
     --title-weight: 700;
     --text-weight:400;
 }
+
+body{
+    font-family: "Montserrat", sans-serif;
+}

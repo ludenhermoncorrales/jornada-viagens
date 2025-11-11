@@ -39,5 +39,17 @@ time, mark, audio, video {
 
     --text-primary-color: #F5F5F5;
     --text-secundary-color: #222222;
+
+    --title-weight: 700;
+    --text-weight:400;
 }
 
+
+header{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 30px;
+    border: solid #000000 16px;
+}

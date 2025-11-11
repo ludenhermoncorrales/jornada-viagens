@@ -1,6 +1,6 @@
 @import url(global.css);
 
-header{
+header {
     height: 138px;
     background-color: var(--brackground-secondary-color);
     align-items: center;
@@ -16,6 +16,11 @@ header{
     /* margin: 37px 0 0 48px; */
 }
 
-nav{
+nav {
     display: none;
+}
+
+input[type="checkbox"]:checked~nav {
+
+    display: block;
 }

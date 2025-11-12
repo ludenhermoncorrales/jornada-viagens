@@ -20,15 +20,18 @@
     flex-direction: row;
 }
 
-.card-offers-zero .card {
-    background-image: url(../img/Mobile/Tokyo2.png);
+.card {
     background-repeat: no-repeat;
 
     height: 288px;
     width: 312px;
     border-radius: 16px;
     text-align: center;
-    margin: 0px auto;
+    margin: 0px auto 24px;
+}
+
+.card.zero {
+    background-image: url(../img/Mobile/Tokyo2.png);
 }
 
 .card header {
@@ -70,39 +73,17 @@
     color: var(--brackground-primary-color);
 }
 
-.card-offers-one .card{
+.card.one {
     background-image: url(../img/Mobile/San-andreas.png);
-    background-repeat: no-repeat;
-
-    height: 288px;
-    width: 312px;
-    border-radius: 16px;
-    text-align: center;
-    margin: 24px auto 0;
 }
 
-.card-offers-two .card{
+.card.two{
     background-image: url(../img/Mobile/paraiba.png);
-    background-repeat: no-repeat;
-
-    height: 288px;
-    width: 312px;
-    border-radius: 16px;
-    text-align: center;
-    margin: 24px auto 0;
 }
 
-.card-offers-tree .card{
+.card.tree{
     background-image: url(../img/Mobile/Manaus.png);
-    background-repeat: no-repeat;
-
-    height: 288px;
-    width: 312px;
-    border-radius: 16px;
-    text-align: center;
-    margin: 24px auto 0;
 }
-
 
 @media screen and (min-width: 768px) {}
 

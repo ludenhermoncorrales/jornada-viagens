@@ -46,4 +46,5 @@ time, mark, audio, video {
 
 body{
     font-family: "Montserrat", sans-serif;
+    color: var(--text-secundary-color);
 }

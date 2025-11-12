@@ -1,0 +1,111 @@
+.section-div-title {
+    text-align: center;
+    margin: 0;
+    padding: 88px 24px 16px 24px;
+    font-size: 28px;
+    font-weight: var(--title-weight);
+
+}
+
+.section-div-title hr {
+    width: 180px;
+    height: 4px;
+    border: none;
+    background-color: var(--button-primary-color);
+}
+
+.card header {
+    background-color: transparent;
+    display: inline;
+    flex-direction: row;
+}
+
+.card-offers-zero .card {
+    background-image: url(../img/Mobile/Tokyo2.png);
+    background-repeat: no-repeat;
+
+    height: 288px;
+    width: 312px;
+    border-radius: 16px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.card header {
+    margin: 24px 79.5px 0 79.5px;
+    color: var(--brackground-primary-color);
+    font-weight: var(--text-weight);
+}
+
+.card section {
+    margin-top: 8px;
+    color: var(--brackground-primary-color);
+    font-weight: var(--title-weight);
+}
+
+.card h2 {
+    font-size: 48px;
+}
+
+.card p {
+    font-size: 32px;
+    margin-top: 24px;
+}
+
+.card footer {
+    margin-top: 24px;
+    width: 280px;
+    height: 64px;
+    background-color: var(--button-primary-color);
+    display: inline-block;
+    border-radius: 8px;
+    border: none;
+    line-height: 64px;
+}
+
+.card footer a {
+    text-decoration: none;
+    font-size: var(--title-weight);
+    font-weight: var(--title-weight);
+    color: var(--brackground-primary-color);
+}
+
+.card-offers-one .card{
+    background-image: url(../img/Mobile/San-andreas.png);
+    background-repeat: no-repeat;
+
+    height: 288px;
+    width: 312px;
+    border-radius: 16px;
+    text-align: center;
+    margin: 24px auto 0;
+}
+
+.card-offers-two .card{
+    background-image: url(../img/Mobile/paraiba.png);
+    background-repeat: no-repeat;
+
+    height: 288px;
+    width: 312px;
+    border-radius: 16px;
+    text-align: center;
+    margin: 24px auto 0;
+}
+
+.card-offers-tree .card{
+    background-image: url(../img/Mobile/Manaus.png);
+    background-repeat: no-repeat;
+
+    height: 288px;
+    width: 312px;
+    border-radius: 16px;
+    text-align: center;
+    margin: 24px auto 0;
+}
+
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1920px) {}

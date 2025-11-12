@@ -17,6 +17,10 @@ header {
     /* margin: 37px 0 0 48px; */
 }
 
+.header-logo-desktop {
+    display: none;
+}
+
 .navigation-hamburger nav {
     display: none;
 }
@@ -43,6 +47,10 @@ input[type="checkbox"]:checked~nav {
 }
 
 @media screen and (min-width: 768px) {
+    .header-logo-desktop {
+        display: none;
+    }
+
     .navigation-hamburger label {
         display: none;
     }
@@ -61,5 +69,29 @@ input[type="checkbox"]:checked~nav {
         margin-right: 24px;
         font-size: 24px;
     }
+}
 
+@media screen and (min-width: 1024px) {
+    .header-logo {
+        display: none;
+    }
+
+    .header-logo-desktop {
+        display: block;
+    }
+
+    .list-links li {
+        padding-right: 120px;
+    }
+
+    .navigation-hamburger a:hover {
+        color: brown;
+    }
+
+}
+
+@media screen and (min-width: 1920px){
+    .list-links li{
+        padding-right: 160px;
+    }
 }

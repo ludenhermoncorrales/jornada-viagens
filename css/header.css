@@ -17,7 +17,7 @@ header {
     /* margin: 37px 0 0 48px; */
 }
 
-nav {
+.navigation-hamburger nav {
     display: none;
 }
 
@@ -36,7 +36,30 @@ input[type="checkbox"]:checked~nav {
     margin: 16px;
 }
 
-.list-links li a{
+.list-links li a {
     color: var(--text-primary-color);
     text-decoration: none;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+    .navigation-hamburger label {
+        display: none;
+    }
+
+    .navigation-hamburger nav {
+        display: block;
+    }
+
+    .list-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .list-links li {
+        margin-right: 24px;
+        font-size: 24px;
+    }
+
 }

@@ -30,10 +30,6 @@
     margin: 0px auto 24px;
 }
 
-.card.zero {
-    background-image: url(../img/Mobile/Tokyo2.png);
-}
-
 .card header {
     margin: 24px 79.5px 0 79.5px;
     color: var(--brackground-primary-color);
@@ -73,6 +69,10 @@
     color: var(--brackground-primary-color);
 }
 
+.card.zero {
+    background-image: url(../img/Mobile/Tokyo2.png);
+}
+
 .card.one {
     background-image: url(../img/Mobile/San-andreas.png);
 }
@@ -86,18 +86,58 @@
 }
 
 @media screen and (min-width: 768px) {
-    .offers-cards{
+    .offers-cards {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .card-offers{
+    .card-offers {
         margin: 0px 12px;
     }
 }
 
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+    .card {
+        background-repeat: no-repeat;
 
-@media screen and (min-width: 1920px) {}
+        height: 308px;
+        width: 480px;
+        border-radius: 16px;
+        text-align: center;
+        margin: 0px auto 24px;
+    }
+
+    .card.zero {
+    background-image: url(../img/Desktop/Tokyo-offer-desktop.png);
+}
+
+.card.one {
+    background-image: url(../img/Desktop/San-Andreas-offer-desktop.png);
+}
+
+.card.two {
+    background-image: url(../img/Desktop/Paraíba-offer-desktop.png);
+}
+
+.card.tree {
+    background-image: url(../img/Desktop/Manaus-offer-desktop.png);
+}
+
+}
+
+@media screen and (min-width: 1920px) {
+    .card {
+        background-repeat: no-repeat;
+
+        height: 308px;
+        width: 588px;
+        border-radius: 16px;
+        text-align: center;
+        margin: 0px auto 24px;
+    }
+    .card-offers {
+        margin: 40px;
+    }
+}

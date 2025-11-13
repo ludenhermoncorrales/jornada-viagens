@@ -77,15 +77,26 @@
     background-image: url(../img/Mobile/San-andreas.png);
 }
 
-.card.two{
+.card.two {
     background-image: url(../img/Mobile/paraiba.png);
 }
 
-.card.tree{
+.card.tree {
     background-image: url(../img/Mobile/Manaus.png);
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    .offers-cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card-offers{
+        margin: 0px 12px;
+    }
+}
 
 @media screen and (min-width: 1024px) {}
 

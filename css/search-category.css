@@ -1,0 +1,95 @@
+.search-title {
+    text-align: center;
+    margin: 0;
+    padding: 88px 24px 16px 24px;
+    font-size: 28px;
+    font-weight: var(--title-weight);
+}
+
+.search-title hr {
+    width: 180px;
+    height: 4px;
+    border: none;
+    background-color: var(--button-primary-color);
+    margin-bottom: 32px;
+}
+
+.search-grid-windows {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.search-grid {
+    width: 312px;
+    height: 220px;
+    background-color: var(--brackground-tertiary-color);
+    margin: 0px auto 24px auto;
+    border-radius: 12px;
+}
+
+.search-grid img {
+    margin-top: 62px;
+}
+
+
+.search-grid section {
+    display: flex;
+    /* Ativa o Flexbox */
+    flex-direction: column;
+    /* Coloca os itens (img e h3) em coluna */
+    align-items: center;
+    /* Centraliza horizontalmente */
+    justify-content: center;
+    /* Centraliza verticalmente (se houver altura definida) */
+    text-align: center;
+    /* Centraliza o texto do h3 */
+    height: 100%;
+    /* Opcional: define altura total da área */
+}
+
+.link-article {
+    text-decoration: none;
+    display: block;
+    font-size: 28px;
+    font-weight: var(--title-weight);
+    color: var(--text-secundary-color);
+}
+
+.link-article h3 {
+    margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .search-grid-windows {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .search-grid {
+        margin: 0px 12px;
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .search-grid {
+        width: 220px;
+    }
+
+    .link-article h3 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .search-grid {
+        width: 282px;
+    }
+     .link-article h3 {
+        font-size: 28px;
+    }
+}

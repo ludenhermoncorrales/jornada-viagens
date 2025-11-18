@@ -85,6 +85,8 @@
     .popular-offers article footer .button-detalhes{
         margin: 0px auto;
     }
+}
 
-
+@media screen and (min-width: 1440px){
+    
 }

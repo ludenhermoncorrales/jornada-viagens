@@ -1,0 +1,90 @@
+.popular-offers header {
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    height: 360px;
+    padding: 0px;
+}
+
+.popular-offers article {
+    margin: 0px 24px;
+    text-align: center;
+}
+
+.popular-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.popular-offers footer {
+    margin-top: 24px;
+    width: 280px;
+    height: 64px;
+    background-color: var(--button-primary-color);
+    display: inline-block;
+    border-radius: 8px;
+    border: none;
+    line-height: 64px;
+}
+
+.popular-offers .popular-item-zero .popular-img {
+    background-image: url(../img/Mobile/popular-destino-tokyo-desk-and-tablet.jpg);
+    background-size: cover;
+
+}
+
+.popular-offers .popular-item-one .popular-img {
+    background-image: url(../img/Mobile/popular-destino-osaka-desk-end-tablet.jpg);
+}
+
+.popular-offers section h2 {
+    font-size: 24px;
+    font-weight: var(--title-weight);
+    color: var(--brackground-secondary-color);
+    text-align: start;
+    margin-top: 24px;
+}
+
+.popular-offers section p {
+    font-size: 20px;
+    font-weight: var(--text-weight);
+    color: var(--brackground-secondary-color);
+    text-align: center;
+    margin: 24px 24px;
+}
+
+.popular-offers article footer {
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .popular-offers {
+        display: flex;
+    }
+
+    .popular-offers article {
+        margin: 0px 12px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .popular-offers article {
+        margin: 0px 12px;
+    }
+
+    .popular-offers section p {
+        margin: 24px 0px;
+        text-align: left;
+    }
+
+    .popular-offers article footer{
+        display: flex;
+    }
+    .popular-offers article footer .button-detalhes{
+        margin: 0px auto;
+    }
+
+
+}

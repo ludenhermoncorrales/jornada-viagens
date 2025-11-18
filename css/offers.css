@@ -62,7 +62,7 @@
     line-height: 64px;
 }
 
-.card footer a {
+.button-detalhes {
     text-decoration: none;
     font-size: var(--title-weight);
     font-weight: var(--title-weight);

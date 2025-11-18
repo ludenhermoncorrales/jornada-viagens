@@ -1,0 +1,44 @@
+.footer-container article header {
+    background-color: transparent;
+    display: inline;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-img {
+    background-image: url(../img/Mobile/footer-image-mobile.png);
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+}
+
+.footer-container footer{
+    height: 360px;
+    width: 100%;
+    background-color: var(--brackground-secondary-color);
+}
+
+.footer-container footer{
+    text-align: center;
+}
+
+.footer-logo{
+    padding-top: 24px;
+}
+
+.footer-container footer p{
+    color: var(--brackground-tertiary-color);
+    text-align: center;
+    font-weight: var(--title-weght);
+    font-size: 28px;
+    margin: 24px 4px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer-container .footer-logo{
+    text-align: center;
+
+}

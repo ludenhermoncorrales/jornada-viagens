@@ -1,0 +1,16 @@
+.popular-offers header{
+    background-color: transparent;
+    display: inline;
+    flex-direction: row;
+}
+
+.popular-offers footer {
+    margin-top: 24px;
+    width: 280px;
+    height: 64px;
+    background-color: var(--button-primary-color);
+    display: inline-block;
+    border-radius: 8px;
+    border: none;
+    line-height: 64px;
+}

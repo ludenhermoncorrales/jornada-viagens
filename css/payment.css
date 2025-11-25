@@ -1,0 +1,15 @@
+.payment-item h2{
+    font-size: 24px;
+    font-weight: var(--title-weight);
+    color: var(--brackground-secondary-color);
+    text-align: start;
+    margin-top: 24px;
+}
+
+.payment-item p{
+    font-size: 20px;
+    font-weight: var(--text-weight);
+    color: var(--brackground-secondary-color);
+    text-align: start;
+    margin-top: 24px;
+}

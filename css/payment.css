@@ -1,0 +1,98 @@
+
+
+.payment .content-container .payment-title-text h2 {
+    font-size: 24px;
+    font-weight: var(--title-weight);
+    color: var(--brackground-secondary-color);
+    text-align: start;
+    margin-top: 24px;
+}
+
+.payment .content-container .payment-title-text p {
+    font-size: 20px;
+    font-weight: var(--text-weight);
+    color: var(--brackground-secondary-color);
+    text-align: start;
+    margin-top: 24px;
+}
+
+.payment .content-container .payment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 460px;
+    gap: 24px;
+    margin: 24px 24px;
+}
+
+
+.payment .payment-grid .grid-one {
+    background-image: url(../img/grid-payment/Montagem\ japão\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.payment .payment-grid .grid-two {
+    background-image: url(../img/grid-payment/Montagem\ japão\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.payment .payment-grid .grid-tree {
+    background-image: url(../img/grid-payment/Montagem\ japão\ 3.png);
+    grid-column: span 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+    .payment .payment-grid .grid-one {
+        background-image: url(../img/grid-payment/Montagem\ japão\ 1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .payment .payment-grid .grid-two {
+        background-image: url(../img/grid-payment/Grid-tablet/Montagem\ japão\ 2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .payment .payment-grid .grid-tree {
+        background-image: url(../img/grid-payment/Grid-tablet/Montagem\ japão\ 3.png);
+        grid-column: span 2;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .payment .content-container .payment-grid{
+        width: 100%;
+    }
+    .payment .content-container {
+    display: flex;
+}
+    
+    .payment .payment-grid .grid-one {
+        background-image: url(../img/grid-payment/Grid-desktop/Montagem\ japão\ 1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .payment .payment-grid .grid-two {
+        background-image: url(../img/grid-payment/Grid-desktop/Montagem\ japão\ 2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .payment .payment-grid .grid-tree {
+        background-image: url(../img/grid-payment/Grid-desktop/Montagem\ japão\ 3.png);
+        grid-column: span 2;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+}

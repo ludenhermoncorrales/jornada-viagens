@@ -1,35 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
+
+    <!-- SEO: Ajuste de idioma e charset ok -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO: Descrição -->
+    <meta name="description"
+        content="Agência de viagens especializada em experiências completas: pacotes nacionais e internacionais, ofertas, destinos populares e condições especiais de pagamento.">
+
+    <!-- SEO: Palavra-chave (menos importante em 2025, mas ainda útil) -->
+    <meta name="keywords"
+        content="viagens, turismo, pacotes de viagem, destinos populares, passagens, hotel, viagens internacionais, viagens nacionais">
+
+    <!-- SEO: Open Graph (compartilhamento social) -->
+    <meta property="og:title" content="Jornada - Agência de Viagens">
+    <meta property="og:description"
+        content="Descubra ofertas, pacotes exclusivos, destinos populares e condições especiais de pagamento.">
+    <meta property="og:image" content="img/Desktop/Logo-branco.png">
+    <meta property="og:type" content="website">
+
+    <!-- SEO: Favicon com alt fallback -->
+    <link rel="shortcut icon" href="Símbolo_black.png" type="image/png">
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="Símbolo_black.png">
-    <title>Document</title>
+
+    <title>Jornada - Agência de Viagens</title>
 </head>
 
 <body>
-    <header>
-        <div>
-            <a href="#"><img class="header-logo" src="img/Mobile/Símbolo_white.png" alt="Logo Bussola do site"></a>
 
-            <a href="#"><img class="header-logo-desktop" src="img/Desktop/Logo-branco.png"
-                    alt="Logo Bussola do site escrito ao lado Jornada"></a>
+    <!-- Acessibilidade: navigation landmark -->
+    <header role="banner">
+        <div>
+            <a href="#" aria-label="Ir para a página inicial">
+                <img class="header-logo" src="img/Mobile/Símbolo_white.png" alt="Logotipo da agência Jornada">
+            </a>
+
+            <a href="#" aria-label="Ir para a página inicial">
+                <img class="header-logo-desktop" src="img/Desktop/Logo-branco.png"
+                    alt="Logotipo Jornada versão desktop, texto ao lado">
+            </a>
         </div>
 
         <div class="navigation-hamburger">
             <label for="check-menu">
-                <img src="img/Mobile/menu_hamburguer.png" alt="Imagem do menu hambureguer para navegar pelo site">
+                <img src="img/Mobile/menu_hamburguer.png"
+                    alt="Abrir ou fechar menu de navegação, ícone de menu hambúrguer">
             </label>
-            <input type="checkbox" name="menu" id="check-menu" hidden>
-            <nav>
+
+            <input type="checkbox" name="menu" id="check-menu" hidden aria-hidden="true">
+
+            <nav aria-label="Menu principal">
                 <ul class="list-links">
                     <li>
                         <a href="blog.html" target="_blank" title="Acessar Blog do Website">Blog</a>
                     </li>
                     <li>
-                        <a href="contato.html" target="_blank" title="Acessar pagina de contatos">Contato</a>
+                        <a href="contato.html" target="_blank" title="Acessar página de contatos">Contato</a>
                     </li>
                     <li>
                         <a href="pacotes.html" target="_blank" title="Acessar Pacotes de viagens">Pacotes de Viagem</a>
@@ -38,124 +69,135 @@
             </nav>
         </div>
     </header>
-    <section class="hero">
-        <!-- Imagem definida dento do CSS hero -->
-        <div class="hero-img">
-        </div>
-        <h2>
+
+    <section class="hero" role="region" aria-labelledby="titulo-hero">
+        <div class="hero-img" role="img" aria-label="Imagem ilustrativa de viagem"></div>
+
+        <h2 id="titulo-hero">
             Somos uma agência apaixonada por criar viagens inesquecíveis. Do destino à seleção das atividades,
             cuidamos de todos os detalhes para que você aproveite ao máximo cada momento da sua jornada!
         </h2>
     </section>
-    <section class="offers">
+
+    <section class="offers" role="region" aria-labelledby="titulo-ofertas">
         <div class="section-div-title">
-            <h2>Ofertas da Semana</h2>
+            <h2 id="titulo-ofertas">Ofertas da Semana</h2>
             <hr />
         </div>
+
         <div class="offers-cards">
             <div class="card-offers">
                 <article class="card zero">
                     <header>
-                        <h3>HOTEL+AÉREO</h3>
+                        <h3>HOTEL + AÉREO</h3>
                     </header>
                     <section>
                         <h2>Japão</h2>
                         <p>R$ 4000</p>
                     </section>
                     <footer>
-                        <a href="#" class="button-detalhes">Ver detalhes</a>
+                        <a href="#" class="button-detalhes" aria-label="Ver detalhes da oferta para Japão">Ver detalhes</a>
                     </footer>
                 </article>
             </div>
+
             <div class="card-offers">
                 <article class="card one">
                     <header>
-                        <h3>HOTEL+AÉREO</h3>
+                        <h3>HOTEL + AÉREO</h3>
                     </header>
                     <section>
                         <h2>San Andreas</h2>
                         <p>R$ 3000</p>
                     </section>
                     <footer>
-                        <a href="#" class="button-detalhes">Ver detalhes</a>
+                        <a href="#" class="button-detalhes"
+                            aria-label="Ver detalhes da oferta para San Andreas">Ver detalhes</a>
                     </footer>
                 </article>
             </div>
+
             <div class="card-offers">
                 <article class="card two">
                     <header>
-                        <h3>HOTEL+AÉREO</h3>
+                        <h3>HOTEL + AÉREO</h3>
                     </header>
                     <section>
                         <h2>Paraíba</h2>
                         <p>R$ 1200</p>
                     </section>
                     <footer>
-                        <a href="#" class="button-detalhes">Ver detalhes</a>
+                        <a href="#" class="button-detalhes" aria-label="Ver detalhes da oferta para Paraíba">Ver detalhes</a>
                     </footer>
                 </article>
             </div>
+
             <div class="card-offers">
                 <article class="card tree">
                     <header>
-                        <h3>HOTEL+AÉREO</h3>
+                        <h3>HOTEL + AÉREO</h3>
                     </header>
                     <section>
                         <h2>Manaus</h2>
                         <p>R$ 1600</p>
                     </section>
                     <footer>
-                        <a href="#" class="button-detalhes">Ver detalhes</a>
+                        <a href="#" class="button-detalhes" aria-label="Ver detalhes da oferta para Manaus">Ver detalhes</a>
                     </footer>
                 </article>
             </div>
         </div>
     </section>
-    <section class="search-category">
+
+    <section class="search-category" role="region" aria-labelledby="titulo-categorias">
         <div class="search-title">
-            <h2>Busque por Categoria</h2>
+            <h2 id="titulo-categorias">Busque por Categoria</h2>
             <hr />
         </div>
+
         <div class="search-grid-windows">
             <div class="search-grid">
-                <a href="#" class="link-article">
+                <a href="#" class="link-article" aria-label="Buscar pacotes nacionais">
                     <article>
                         <section>
                             <img src="img/general/icone-pacotesnacionais.png"
-                                alt="Icone tipo silhueta de uma pessoa com mochila nas costas">
-                            <h3> Nacionais</h3>
+                                alt="Ícone representando viagem nacional, silhueta com mochila">
+                            <h3>Nacionais</h3>
                         </section>
                     </article>
                 </a>
             </div>
+
             <div class="search-grid">
-                <a href="#" class="link-article">
+                <a href="#" class="link-article" aria-label="Buscar pacotes internacionais">
                     <article>
                         <section>
                             <img src="img/general/icone-pacotesinteracionais.png"
-                                alt="Icone tipo silhueta de uma pessoa com mochila nas costas">
+                                alt="Ícone representando pacotes internacionais">
                             <h3>Pacotes<br> Internacionais</h3>
                         </section>
                     </article>
                 </a>
             </div>
+
             <div class="search-grid">
-                <a href="#" class="link-article">
+                <a href="#" class="link-article" aria-label="Serviços de transfer">
                     <article>
                         <section>
                             <img src="img/general/icone-transfer.png"
-                                alt="Icone tipo silhueta de um veiculo tipo onibus">
+                                alt="Ícone representando veículo para transfer">
                             <h3>Transfer</h3>
                         </section>
                     </article>
                 </a>
             </div>
+
             <div class="search-grid">
-                <a href="#" class="link-article">
+                <a href="#" class="link-article" aria-label="Seguro viagem">
                     <article>
                         <section>
                             <img src="img/general/icone-seguroviagem.png"
-                                alt="Icone tipo silhueta do globo terrestre com um cadeado">
+                                alt="Ícone representando globo terrestre com cadeado, seguro viagem">
                             <h3>Seguro Viagem</h3>
                         </section>
                     </article>
@@ -163,85 +205,90 @@
             </div>
         </div>
     </section>
-    <section class="popular-destinations">
+
+    <section class="popular-destinations" role="region" aria-labelledby="titulo-populares">
         <div class="search-title">
-            <h2>Destinos Populares</h2>
+            <h2 id="titulo-populares">Destinos Populares</h2>
             <hr />
         </div>
+
         <div>
             <div class="popular-offers">
                 <div>
                     <article class="popular-item-zero">
                         <header>
-                            <div class="popular-img"></div>
+                            <div class="popular-img" role="img" aria-label="Imagem ilustrativa de Tokyo"></div>
                         </header>
                         <section>
                             <h2>Tokyo</h2>
-                            <p>Tóquio é uma cidade vibrante e cosmopolita, com seus templos históricos, museus de arte
-                                moderna e arranha-céus icônicos. Não perca a chance de mergulhar em sua atmosfera
-                                fascinante.</p>
+                            <p>Tóquio é uma cidade vibrante e cosmopolita, com templos históricos, museus modernos e
+                                arranha-céus icônicos.</p>
                         </section>
                         <footer>
-                            <a href="#" class="button-detalhes">Ver detalhes</a>
+                            <a href="#" class="button-detalhes" aria-label="Ver detalhes sobre viagem para Tokyo">Ver detalhes</a>
                         </footer>
                     </article>
                 </div>
+
                 <div>
                     <article class="popular-item-one">
                         <header>
-                            <div class="popular-img"></div>
+                            <div class="popular-img" role="img" aria-label="Imagem ilustrativa de Osaka"></div>
                         </header>
                         <section>
                             <h2>Osaka</h2>
-                            <p>Osaka é uma cidade agitada e moderna no Japãos. A cidade é famosa por sua gastronomia
-                                deliciosa e por ser um excelente ponto de partida para explorar outras cidades japonesas
-                                próximas.</p>
+                            <p>Osaka é uma cidade moderna e cheia de cultura, famosa por sua gastronomia e por ser ponto
+                                estratégico para explorar o Japão.</p>
                         </section>
                         <footer>
-                            <a href="#" class="button-detalhes">Ver detalhes</a>
+                            <a href="#" class="button-detalhes" aria-label="Ver detalhes sobre viagem para Osaka">Ver detalhes</a>
                         </footer>
                     </article>
                 </div>
             </div>
         </div>
     </section>
-    <section class="payment">
+
+    <section class="payment" role="region" aria-labelledby="titulo-pagamento">
         <div class="search-title">
-            <h2>Condições de Pagamento</h2>
+            <h2 id="titulo-pagamento">Condições de Pagamento</h2>
             <hr />
         </div>
+
         <div class="content-container">
             <div class="payment-title-text">
                 <section>
                     <h2>Parcelamento em até 12x!</h2>
-                    <p>Viaje pagando em até 12 parcelas no cartão, à vista no crédito com 5% de desconto ou no
-                        Pix
-                        com 10% de desconto! </p>
+                    <p>Viaje pagando em até 12 parcelas no cartão, à vista no crédito com 5% de desconto ou no Pix com 10%
+                        de desconto!</p>
+                </section>
             </div>
-            <div class="payment-grid">
+
+            <div class="payment-grid" role="img" aria-label="Ilustrações das opções de pagamento">
                 <div class="grid-one"></div>
                 <div class="grid-two"></div>
                 <div class="grid-tree"></div>
             </div>
+        </div>
     </section>
 
-    </div>
-    </div>
-    </section>
-    <footer class="footer-container">
+    <footer class="footer-container" role="contentinfo">
         <article>
-            <div class="footer-img"></div>
+            <div class="footer-img" role="img" aria-label="Imagem decorativa do rodapé"></div>
+
             <footer>
-                <div><img src="img/Mobile/footer-logo- mobile.png" alt="" class="footer-logo"></div>
-                <p>
-                    Horário de atendimento: 08h - 20h (Segunda a Sábado)
-                </p>
+                <div>
+                    <img src="img/Mobile/footer-logo- mobile.png" alt="Logotipo Jornada rodapé" class="footer-logo">
+                </div>
+
+                <p>Horário de atendimento: 08h - 20h (Segunda a Sábado)</p>
                 <p>Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
+
                 <p>Acesse nossas redes:</p>
                 <div>
-                    <img src="img/general/footer-logo-Whatsapp.png" alt=""><img
-                        src="img/general/footer-logo-Instragam.png" alt=""><img src="img/general/footer-logo-Twiter.png"
-                        alt="">
+                    <img src="img/general/footer-logo-Whatsapp.png" alt="WhatsApp da agência">
+                    <img src="img/general/footer-logo-Instragam.png" alt="Instagram da agência">
+                    <img src="img/general/footer-logo-Twiter.png" alt="Twitter da agência">
                 </div>
             </footer>
         </article>
